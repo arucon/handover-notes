@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+  font-family: Geist, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  color: #172833;
+  background: #f6f9fc;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+body { margin: 0; }
+
+a {
+  color: #275477;
+  text-underline-offset: 0.22em;
+}
+
+a:focus-visible {
+  outline: 2px solid #275477;
+  outline-offset: 4px;
+}
+
+.site-header {
+  border-bottom: 1px solid #d7e1eb;
+  background: #fff;
+}
+
+nav, main {
+  max-width: 43rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 2rem);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  padding-block: 0.6rem;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.brand {
+  color: inherit;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.nav-links, .page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.nav-links [aria-current="page"] { font-weight: 750; }
+
+main { padding-block: clamp(2.25rem, 8vw, 4.5rem) 4rem; }
+
+h1, h2 {
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+h1 { font-size: clamp(2rem, 7vw, 3.25rem); }
+h2 { font-size: clamp(1.2rem, 4vw, 1.4rem); }
+
+p { margin: 0.65rem 0 0; }
+
+.summary {
+  margin-top: 1.05rem;
+  color: #3d5469;
+  font-size: 1.1rem;
+}
+
+section, .page-links {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d7e1eb;
+}
